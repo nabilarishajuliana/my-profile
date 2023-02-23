@@ -6,7 +6,7 @@ function Home() {
     return (
         <>
             <Nav />
-            <div className="relative">
+            <div className="relative mt-10">
                 <img
                     src="asset/fotobg2.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                     className="absolute inset-0 object-cover w-full h-full"
@@ -22,9 +22,7 @@ function Home() {
                                     <span className="text-teal-accent-400"> Nabila Risha Juliana</span>
                                 </h2>
                                 <p className="max-w-xl mb-4 text-base text-brown-color4 md:text-lg">
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                    accusantium doloremque laudan, totam rem aperiam, eaque ipsa
-                                    quae.
+                                I'm a student at SMK Telkom Malang majoring in RPL, let's find out more about me ^3^
                                 </p>
                                 <button class="bg-white-color2 hover:bg-white-color1 text-black-color1 font-bold py-2 px-4 border-b-4 border-white-color3 hover:border-blue-500 rounded">
                                     <a

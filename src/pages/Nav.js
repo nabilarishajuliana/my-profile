@@ -1,37 +1,79 @@
-import React from 'react'
-import { FiMenu } from "react-icons/fi";
+import Link from "next/link"
+import React, { useState } from "react"
+
+import { HiOutlineDownload } from 'react-icons/hi'
+import { FaBars, FaTimes } from 'react-icons/fa'
 
 
 function Nav() {
+    const [nav, setNav] = useState(false)
+    const links = [
+        {
+            id: 1,
+            name: 'home',
+            link: '/'
+        },
+        {
+            id: 2,
+            name: 'about',
+            link: 'About'
+        },
+        {
+            id: 4,
+            name: "contact",
+            link: 'Contact'
+        },
+    ]
     return (
-        <div>
-           
-            <nav class="flex items-center justify-between flex-wrap bg-white-color2 p-6">
-                <div class="flex items-center flex-shrink-0 text-white mr-6">
-                <img src="/asset/gifLuffy.gif" class="rounded-full mr-2" alt="Logo" width="30" height="30"  />
-                    <span class="font-semibold text-xl tracking-tight">My Profile</span>
-                </div>
-                <div class="block lg:hidden">
-                    <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
-                    </button>
-                </div>
-                <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                    <div class="text-sm font-semibold lg:flex-grow ">
-                        <a href="/" class="block mt-4 lg:inline-block lg:mt-0  hover:text-brown-color2 mr-4">
-                            Home
-                        </a>
-                        <a href="/About" class="block mt-4 lg:inline-block lg:mt-0  hover:text-brown-color2 mr-4">
-                            About me
-                        </a>
-                        <a href="/Contact" class="block mt-4 lg:inline-block lg:mt-0  hover:text-brown-color2">
-                            Contact
-                        </a>
+        <>
+            <div className='bg-white-color2 fixed top-0 w-[100%] z-10'>
+                <div className='container w-full mx-auto flex justify-between items-center py-4'>
+                    <div className="flex mx-3">
+                        <img src="/asset/gifLuffy.gif" class="object-cover rounded-full mr-2" alt="Logo" width="30" height="30" />
+                        <div className=' text-[24px] text-pink-400 px-2 font-semibold'>My Profile</div>
                     </div>
-                    
+
+                    <ul className="hidden md:flex gap-4 justify-between items-center px-14">
+                        <li>
+                            <Link href={"/"} className="hover:text-brown-color2">
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={"About"} className="hover:text-brown-color2">
+                                About Me
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link href={"Contact"} className="hover:text-brown-color2">
+                                Contact
+                            </Link>
+                        </li>
+                    </ul>
+
+
+                    <div onClick={() => setNav(!nav)} className="block cursor-pointer md:hidden text-[24px] text-pink-400 pr-4">
+                        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+                    </div>
+                    {nav && (
+                        <>
+                            <ul className="flex flex-col justify-center items-center absolute top-14 left-0 w-full h-200 bg-white-color2 text-white">
+                                {links.map(({ id, name, link }) => (
+                                    <li
+                                        key={id}
+                                        className="px-4 cursor-pointer capitalize py-4 text-2xl"
+                                        onClick={() => setNav(!nav)}
+                                    >
+                                        <Link href={link}>{name}</Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </>
+                    )}
                 </div>
-            </nav>
-        </div>
+            </div>
+        </>
     )
 }
 

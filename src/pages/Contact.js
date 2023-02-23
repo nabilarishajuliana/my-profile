@@ -18,7 +18,7 @@ function Contact() {
           className="absolute inset-0 object-cover w-full h-full"
           alt=""
         />
-        <section class="bg-white dark:bg-gray-900 relative">
+        <section class="relative mt-14">
           <div class="container grid gap-8 px-6 py-12 mx-auto lg:grid-cols-3">
             <div>
 

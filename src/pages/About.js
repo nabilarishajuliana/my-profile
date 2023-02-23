@@ -14,7 +14,7 @@ function About() {
                     className="absolute inset-0 object-cover w-full h-full"
                     alt=""
                 />
-                <section className=" relative">
+                <section className=" relative mt-16">
 
                     <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12 ">
                         <a rel="noopener noreferrer" href="#" className="block max-w-sm gap-3 mx-auto  sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12">
