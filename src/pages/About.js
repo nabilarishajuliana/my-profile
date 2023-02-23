@@ -8,12 +8,8 @@ function About() {
     return (
         <>
             <Nav />
-            <div className='relative'>
-                <img
-                    src="asset/fotobg2.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                    className="absolute inset-0 object-cover w-full h-full"
-                    alt=""
-                />
+            <div className='bg-brown-color3'>
+                
                 <section className=" relative mt-16">
 
                     <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12 ">
@@ -30,7 +26,7 @@ function About() {
                                     Asal sekolah: SMK TELKOM MALANG<br />
                                     Hobi: menonton,makeup<br />
                                     Softskill: Self-Control <br />
-                                    Kesukaan: Luffy,zoro </p>
+                                    Kesukaan: Luffy,Renjun </p>
                             </div>
                         </a>
 
@@ -38,7 +34,7 @@ function About() {
                     </div>
                 </section>
 
-                <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 relative">
+                <div className="px-4 pt-16 pb-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 relative">
 
                     <div className="mx-auto sm:text-center lg:max-w-2xl">
                         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-8">
@@ -72,7 +68,7 @@ function About() {
                         <div className="container p-6 mx-auto space-y-8">
                             <div className="space-y-2 text-center text-white-color1">
                                 <h2 className="text-3xl font-bold">SOME OF MY WORKS </h2>
-                                <p className="font-serif text-sm text-brown-color4">Check It Out!</p>
+                                <p className=" text-lg text-brown-color4">Check It Out!</p>
                             </div>
                             <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
                                 <article className="flex flex-col bg-white-color2">
