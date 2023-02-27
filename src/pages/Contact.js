@@ -54,7 +54,7 @@ function Contact() {
               </div>
 
               <div class="p-4 rounded-lg bg-blue-50 md:p-6 hover:shadow-xl bg-white-color2">
-                <a href='nabila_juliana_30rpl@student.smktelkom-mlg.sch.id'>
+                <a href='mailto:nabila_juliana_30rpl@student.smktelkom-mlg.sch.id'>
                  <span class="inline-block p-3 text-blue-500 rounded-lg bg-blue-100/80 dark:bg-gray-700">
                   <SiGmail style={{ width: "50px", height: "50px" }} />
                 </span>
