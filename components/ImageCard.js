@@ -20,9 +20,9 @@ const ImageCard = ({ item }) => {
             <li className="text-md ">
               <strong>Rp. {item.price}</strong>
             </li>
-            <li className="text-md flex justify-between mt-2">
-              <p className="py-3">{item.category}</p>
-              <Link href={`/Favorite/${item.id}`} key={item.id} className="px-4 py-3 font-semibold rounded-full dark:bg-white-color3 text-brown-color3 hover:bg-white-color1">Details</Link>
+            <li className="text-md flex flex-col md:flex-row justify-between items-center md:items-start mt-2 ">
+              <p className="py-3 md:mb-0">{item.category}</p>
+              <Link href={`/Favorite/${item.id}`} key={item.id} className="px-4 py-3 font-semibold rounded-full dark:bg-white-color3 text-brown-color3 hover:bg-white-color1 md:ml-4 md:mt-0">Details</Link>
             </li>
           </ul>
         </div>
