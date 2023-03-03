@@ -16,12 +16,12 @@ function Nav() {
         {
             id: 2,
             name: 'About',
-            link: 'About'
+            link: '/About'
         },
         {
             id: 4,
             name: "Favorite",
-            link: 'Favorite'
+            link: '/Favorite'
         },
     ]
     return (
@@ -40,13 +40,13 @@ function Nav() {
                             </Link>
                         </li>
                         <li>
-                            <Link href={"About"} className="hover:text-brown-color2">
+                            <Link href={"/About"} className="hover:text-brown-color2">
                                 About Us
                             </Link>
                         </li>
 
                         <li>
-                            <Link href={"Favorite"} className="hover:text-brown-color2">
+                            <Link href={"/Favorite"} className="hover:text-brown-color2">
                                 Favorite
                             </Link>
                         </li>
