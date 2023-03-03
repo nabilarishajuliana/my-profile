@@ -79,9 +79,9 @@ function Card() {
                 <div className="text-center text-4xl font-bold p-5 text-brown-color3">
                     <h3>Products</h3>
                 </div>
-                <div className="justify-center flex ">
+                <div className="justify-center flex flex-col md:flex-row gap-4 items-center">
                 <div className='bg-white-color2 flex rounded-md mr-2 border-2 border-brown-color3'>
-                <label className="logo-search flex items-center py-5 mx-3" ><BiSearch className='w-5 h-5 text-black' /></label>
+                <label className="logo-search flex items-center py-3 mx-3" ><BiSearch className='w-5 h-5 text-black' /></label>
                         <input
                             style={{ color: "black" }}
                             className="px-3 text-sm bg-white-color2 rounded-md"
@@ -111,7 +111,7 @@ function Card() {
                     <h1 className="text-5xl text-center mx-auto mt-32">No Images Found</h1>
                 )}
                 {data.length !== 0 && (
-                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4" onClick={() => setShowModal(true)}>
+                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-4" onClick={() => setShowModal(true)}>
                         {product
                             .map((item) => (
                                 <ImageCard key={item.id} item={item} coba={item.image} />
