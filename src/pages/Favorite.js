@@ -1,6 +1,7 @@
 import React from 'react'
-import Nav from './Nav'
-import Footer from './Footer'
+import Nav from '../../components/Nav'
+import Footer from '../../components/Footer'
+import Card from '../../components/card';
 
 import { FaInstagram } from "react-icons/fa";
 import { AiFillGithub, AiOutlineWhatsApp } from "react-icons/ai";
@@ -8,11 +9,11 @@ import { SiGmail } from "react-icons/si";
 
 
 
-function Contact() {
+function Favorite() {
   return (
     <>
-      <Nav />
-      <div className='relative'>
+      <Card/>
+      {/* <div className='relative'>
         <img
           src="asset/fotobg2.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
           className="absolute inset-0 object-cover w-full h-full"
@@ -78,10 +79,9 @@ function Contact() {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
 
 
-      <Footer />
 
 
     </>
@@ -89,4 +89,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default Favorite

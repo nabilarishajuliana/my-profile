@@ -1,11 +1,18 @@
 import React from 'react'
-import Nav from './Nav'
-import Footer from './Footer'
+import data from 'data'
+import { useEffect, useState } from 'react';
+import ImageCard from 'components/ImageCard';
 
 function Home() {
+
+    const [product, setProduct] = useState([]);
+
+    useEffect(() => {
+        setProduct(data);
+    }, []);
+
     return (
         <>
-            <Nav />
             <div className="relative mt-10">
                 <img
                     src="asset/fotobg2.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
@@ -18,15 +25,15 @@ function Home() {
                             <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
                                 <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white-color1 sm:text-4xl sm:leading-none">
                                     Hai There! <br className="hidden md:block" />
-                                    I'm{' '}
-                                    <span className="text-teal-accent-400"> Nabila Risha Juliana</span>
+                                    Welcome to{' '}
+                                    <span className="text-teal-accent-400"> Huang Resto</span>
                                 </h2>
                                 <p className="max-w-xl mb-4 text-base text-brown-color4 md:text-lg">
-                                I'm a student at SMK Telkom Malang majoring in RPL, let's find out more about me ^3^
+                                Makanlah dengan baik dan Anda akan dapat berpikir dengan baik, tidur nyenyak, dan hidup dengan baik ^3^
                                 </p>
                                 <button class="bg-white-color2 hover:bg-white-color1 text-black-color1 font-bold py-2 px-4 border-b-4 border-white-color3 hover:border-blue-500 rounded">
                                     <a
-                                        href="/About"
+                                        href="/Favorite"
                                         aria-label=""
                                         className="inline-flex items-center duration-200 "
                                     >
@@ -44,14 +51,15 @@ function Home() {
                             </div>
                             <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
                                 <div className="bg-white-color1 rounded shadow-2xl p-7 sm:p-10">
-                                    <img src="asset/foto1.jpeg" class="" alt="..." />
+                                    <img src="asset/makanan1.jpeg" class="" alt="..." />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <Footer/>
+
+            
         </>
     )
 }

@@ -10,27 +10,27 @@ function Nav() {
     const links = [
         {
             id: 1,
-            name: 'home',
+            name: 'Home',
             link: '/'
         },
         {
             id: 2,
-            name: 'about',
+            name: 'About',
             link: 'About'
         },
         {
             id: 4,
-            name: "contact",
-            link: 'Contact'
+            name: "Favorite",
+            link: 'Favorite'
         },
     ]
     return (
         <>
-            <div className='bg-white-color2 fixed top-0 w-[100%] z-10'>
+            <div className='bg-white-color2 fixed top-0 w-[100%] z-10 m-0 p-0'>
                 <div className='container w-full mx-auto flex justify-between items-center py-4'>
                     <div className="flex mx-3">
-                        <img src="/asset/gifLuffy.gif" class="object-cover rounded-full mr-2" alt="Logo" width="30" height="30" />
-                        <div className=' text-[24px] text-pink-400 px-2 font-semibold'>My Profile</div>
+                        <img src="/asset/gifRenjun.gif" className="object-cover rounded-full mr-2" alt="Logo" width="30" height="30" />
+                        <div className=' text-[24px] text-pink-400 px-2 font-semibold'>HuangResto</div>
                     </div>
 
                     <ul className="hidden md:flex gap-4 justify-between items-center px-14">
@@ -41,13 +41,13 @@ function Nav() {
                         </li>
                         <li>
                             <Link href={"About"} className="hover:text-brown-color2">
-                                About Me
+                                About Us
                             </Link>
                         </li>
 
                         <li>
-                            <Link href={"Contact"} className="hover:text-brown-color2">
-                                Contact
+                            <Link href={"Favorite"} className="hover:text-brown-color2">
+                                Favorite
                             </Link>
                         </li>
                     </ul>
