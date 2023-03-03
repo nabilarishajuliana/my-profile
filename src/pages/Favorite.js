@@ -1,7 +1,6 @@
 import React from 'react'
-import Nav from '../../components/Nav'
-import Footer from '../../components/Footer'
-import Card from '../../components/card';
+
+import Card from 'components/Card';
 
 import { FaInstagram } from "react-icons/fa";
 import { AiFillGithub, AiOutlineWhatsApp } from "react-icons/ai";
