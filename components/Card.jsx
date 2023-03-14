@@ -31,16 +31,19 @@ function Card() {
     }
 
     useEffect(() => {
-        try {
-            const fetchData = async () => {
+
+        async function getData() {
+            try {
                 const response = await fetch("https://api.jsonbin.io/v3/b/640ee172c0e7653a0587007a");
                 const data = await response.json();
                 setData(data.record);
-            };
-            fetchData();
-        } catch (err) {
-            console.log(err);
+
+            } catch (err) {
+                console.log(err);
+            }
         }
+
+        getData();
     }, []);
 
     return (
