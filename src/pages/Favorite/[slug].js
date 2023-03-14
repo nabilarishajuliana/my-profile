@@ -19,7 +19,7 @@ function Detail() {
   const { slug } = router.query;
   const barang = getCakes(slug);
   console.log(slug);
-  
+
   if (Object.keys(barang).length === 1) {
     return <div>Item not found</div>;
   }
@@ -40,8 +40,8 @@ function Detail() {
   };
 
   return (
-    <main className="mt-[200px]">
-      <div className="h-screen flex justify-center items-center bg-cream">
+    <main className="h-screen">
+      <div className="flex justify-center items-center bg-cream">
         <div className="px-4 sm:px-0 w-[375px] sm:w-[600px] flex flex-col sm:grid sm:grid-cols-2">
           {/* TODO: Use Next Image to make images optimize in <picture></picture> HTML element */}
           <div>
@@ -96,9 +96,9 @@ function Detail() {
               </div>
             </div>
 
-            <button type="button"
-                onClick={handleOnAddToCart}
-                disabled={adding} className="mt-4 sm:mt-6 flex space-x-2 justify-center items-center py-4 w-full text-xs text-white font-montserrat font-bold bg-black hover:bg-veryDarkBlue transition ease-in-out delay-75 rounded-lg">
+            <button type="button "
+              onClick={handleOnAddToCart}
+              disabled={adding} className="mt-4 sm:mt-6 flex space-x-2 justify-center items-center py-4 w-full text-xs text-white font-montserrat font-bold bg-black hover:bg-veryDarkBlue transition ease-in-out delay-75 rounded-lg ">
               <FiShoppingCart
                 className="w-5 h-5"
               />
